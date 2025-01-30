@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetble Shope</title>
+
+    <!--font Awosome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!--daisyui cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <!--tailwind css cdn-->
+    <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'btn-primary':'#179800',
+                    'btn-text':'#FFFFFF',
+                                       
+                  }
+                }
+              }
+            }
+          </script>
+
+    <style>
+        .sora-font {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+    </style>
+
+</head>
+    <body class="sora-font">
+        <header >
+            <nav class="max-w-screen-lg mx-auto px-[10px] lg:px-0">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                    <img class="hidden lg:flex" src="images/logo-header.png" alt="">
+                    <img class="lg:hidden" src="images/Group.png" alt="">
+                    </div>
+                    
+                    <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-regular text-xl" href="#">Product</a></li>
+                        <li><a class="font-regular text-xl" href="#">Services</a></li>
+                        <li><a class="font-regular text-xl" href="#">Contact us</a></li>
+                    </ul>
+                    </div>
+                    <div class="navbar-end  ">
+                        <i class="fa-solid fa-magnifying-glass mr-[10px] hidden lg:flex font-regular text-xl"></i>
+
+                        <i class="fa-solid fa-cart-shopping mr-[20px] hidden lg:flex font-regular text-xl"></i>
+                        <button class="btn hover:bg-btn-text hover:border hover:text-btn-primary hover:border-solid hover:border-btn-primary bg-btn-primary text-btn-text mr-[10px] hidden lg:flex">Login</button>
+                        <button class="btn hover:bg-btn-text hover:border hover:text-btn-primary hover:border-solid hover:border-btn-primary bg-btn-primary text-btn-text hidden lg:flex">Register</button>
+                        <i class="fa-solid fa-bars lg:hidden text-btn-primary font-regular text-2xl"></i>
+                    </div>
+                    
+                </div>
+                
+            </nav>
+            <div class="border-b border-solid border-b-btn-primary lg:border-none "></div>
+        </header >
+        
+
+        
+    </body>
+</html>
