@@ -51,7 +51,7 @@
 
 </head>
 
-<body class="sora-font">
+<body class="sora-font ">
     <header class="bg-gradient-to-t from-header-bgb to-header-bgt">
         <nav class="max-w-screen-lg mx-auto px-[10px] lg:px-0 ">
             <div class="navbar">
@@ -102,7 +102,7 @@
         </div>
 
     </header>
-    <main>
+    <main class="">
         <!--services section-->
         <div class="mt-[140px] max-w-screen-lg mx-auto px-[10px] lg:px-0">
             <h2 class="text-btn-primary text-3xl font-semibold mb-[48px]">Services</h2>
@@ -286,7 +286,7 @@
 
         <!--arrival section-->
 
-        <section class="lg:pt-[140px] pt-[80px] lg:pb-[140px] pb-[80px] max-w-screen-lg mx-auto px-[10px] lg:px-0">
+        <section class="lg:pt-[140px] pt-[80px] lg:pb-[140px] pb-[80px] max-w-screen-lg mx-auto px-[10px] lg:px-0  ">
             <h2 class="font-semibold text-2xl text-btn-primary mb-[40px]">Arrival & offers</h2>
             <div class="grid lg:flex lg:justify-between ">
                 <!--card1-->
@@ -316,32 +316,65 @@
             </div>
         </section>
 
-        <!--grocery news-->
-
-        <section class="max-w-screen-lg mx-auto px-[10px] lg:px-0 bg-card-bg rounded-[20px]">
-            <div class="lg:flex items-center text-center lg:text-left p-[50px]">
-                <div class="">
-                    <img src="images/vegetable-busket.png" alt="">
-                </div>
-                <div>
-                    <h2 class="font-semibold text-3xl text-btn-primary lg:text-primary-txt mt-[20px] mb-[20px]">Get Grocery News!</h2>
-                    <p class="font-regular text-xl text-primary-txt lg:text-base mb-[20px]">Exclusive training tips, ticks, product deals and more.</p>
-                    <input class="p-[20px] w-full rounded-[10px] mb-[20px]" type="email" name="" id="" placeholder="Enter Email....">
-                    <button class="bg-btn-primary text-btn-text btn hover:bg-btn-text hover:text-btn-primary">Subscribe</button>
-                </div>
-            </div>
-        </section>
+        
+        
 
     </main>
 
-    <!--footer section -->
-    <footer>
-        
-        <!--footer-->
-        <section>
+    
 
+    <section class="bg-btn-primary" >
+        <section class="relative max-w-screen-lg mx-auto px-[10px] lg:px-0 ">
+            <!--grocery news-->
+    
+            <section class="max-w-screen-lg mx-auto px-[10px] lg:px-0 bg-card-bg rounded-[20px] absolute lg:bottom-[350px] bottom-[500px] right-[20px] left-[20px] z-2">
+                <div class="lg:flex items-center text-center lg:text-left p-[50px]">
+                    <div class="">
+                        <img src="images/vegetable-busket.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="font-semibold text-3xl text-btn-primary lg:text-primary-txt mt-[20px] mb-[20px]">Get Grocery News!</h2>
+                        <p class="font-regular text-xl text-primary-txt lg:text-base mb-[20px]">Exclusive training tips, ticks, product deals and more.</p>
+                        <input class="p-[20px] w-full rounded-[10px] mb-[20px]" type="email" name="" id="" placeholder="Enter Email....">
+                        <button class="bg-btn-primary text-btn-text btn hover:bg-btn-text hover:text-btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </section>
+
+
+        <!--footer section -->
+        
+            <footer class=" bg-btn-primary text-neutral-content p-10 pt-[370px]  z-1 mt-[400px]">
+                <div class="max-w-screen-lg mx-auto px-[10px] lg:px-0 grid lg:grid-cols-3 gap-6">
+                    <div>
+                        <img src="images/logo-footer.png" alt="">
+                      <p class="text-card-bg font-regular text-lg mt-[10px]">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends
+                      </p>
+                    </div>
+                    <div class="lg:text-center items-end">
+                        <ul class="text-xl font-regular text-card-bg ">
+                            <li class="mb-[10px]"><a class="font-regular text-xl" href="#">Product</a></li>
+                            <li class="mb-[10px]"><a class="font-regular text-xl" href="#">Services</a></li>
+                            <li class="mb-[10px]"><a class="font-regular text-xl" href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class=" lg:mt-[100px] lg:ml-[100px]">
+                        <h6 class="font-medium text-base text-card-bg">Follow Us</h6>
+                        <div class="flex gap-4">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    
         </section>
-    </footer>
+    </section>
+    
 
 
 </body>
