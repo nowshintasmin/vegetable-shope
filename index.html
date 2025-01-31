@@ -1,279 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetble Shope</title>
 
     <!--font Awosome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
     <!--daisyui cdn-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!--tailwind css cdn-->
     <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-              theme: {
+    <script>
+        tailwind.config = {
+            theme: {
                 extend: {
-                  colors: {
-                    clifford: '#da373d',
-                    'btn-primary':'#179800',
-                    'btn-text':'#FFFFFF',
-                    'header-bgt':'rgba(255, 255, 255, 1)',
-                    'header-bgb':'rgba(239, 235, 227, 1)',
-                    'primary-txt':'#111111',
-                    'card-bg':'#EFEBE3',
-                                       
-                  }
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-primary': '#179800',
+                        'btn-text': '#FFFFFF',
+                        'header-bgt': 'rgba(255, 255, 255, 1)',
+                        'header-bgb': 'rgba(239, 235, 227, 1)',
+                        'primary-txt': '#111111',
+                        'card-bg': '#EFEBE3',
+
+                    }
                 }
-              }
             }
-          </script>
+        }
+    </script>
 
     <style>
         .sora-font {
-  font-family: "Sora", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
     </style>
 
 </head>
-    <body class="sora-font">
-        <header class="bg-gradient-to-t from-header-bgb to-header-bgt">
-            <nav class="max-w-screen-lg mx-auto px-[10px] lg:px-0 ">
-                <div class="navbar" >
-                    <div class="navbar-start">
+
+<body class="sora-font">
+    <header class="bg-gradient-to-t from-header-bgb to-header-bgt">
+        <nav class="max-w-screen-lg mx-auto px-[10px] lg:px-0 ">
+            <div class="navbar">
+                <div class="navbar-start">
                     <img class="hidden lg:flex" src="images/logo-header.png" alt="">
                     <img class="lg:hidden" src="images/Group.png" alt="">
-                    </div>
-                    
-                    <div class="navbar-center hidden lg:flex">
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="font-regular text-xl" href="#">Product</a></li>
                         <li><a class="font-regular text-xl" href="#">Services</a></li>
                         <li><a class="font-regular text-xl" href="#">Contact us</a></li>
                     </ul>
-                    </div>
-                    <div class="navbar-end  ">
-                        <i class="fa-solid fa-magnifying-glass mr-[10px] hidden lg:flex font-regular text-xl"></i>
-
-                        <i class="fa-solid fa-cart-shopping mr-[20px] hidden lg:flex font-regular text-xl"></i>
-                        <button class="btn hover:bg-btn-text hover:border hover:text-btn-primary hover:border-solid hover:border-btn-primary bg-btn-primary text-btn-text mr-[10px] hidden lg:flex">Login</button>
-                        <button class="btn hover:bg-btn-text hover:border hover:text-btn-primary hover:border-solid hover:border-btn-primary bg-btn-primary text-btn-text hidden lg:flex">Register</button>
-                        <i class="fa-solid fa-bars lg:hidden text-btn-primary font-regular text-2xl"></i>
-                    </div>
-                    
                 </div>
-                
-            </nav>
-            <div class="border-b border-solid border-b-btn-primary lg:border-none "></div>
-            <!--banner section-->
-            <div class="max-w-screen-lg mx-auto px-[10px] lg:px-0 mt-[90px]">
-                
-                <div class="ali text-center">
-                    <h1 class="text-5xl font-semibold">Freshness <span class="text-btn-primary"> You Can  <br>
+                <div class="navbar-end  ">
+                    <i class="fa-solid fa-magnifying-glass mr-[10px] hidden lg:flex font-regular text-xl"></i>
+
+                    <i class="fa-solid fa-cart-shopping mr-[20px] hidden lg:flex font-regular text-xl"></i>
+                    <button
+                        class="btn hover:bg-btn-text hover:border hover:text-btn-primary hover:border-solid hover:border-btn-primary bg-btn-primary text-btn-text mr-[10px] hidden lg:flex">Login</button>
+                    <button
+                        class="btn hover:bg-btn-text hover:border hover:text-btn-primary hover:border-solid hover:border-btn-primary bg-btn-primary text-btn-text hidden lg:flex">Register</button>
+                    <i class="fa-solid fa-bars lg:hidden text-btn-primary font-regular text-2xl"></i>
+                </div>
+
+            </div>
+
+        </nav>
+        <div class="border-b border-solid border-b-btn-primary lg:border-none "></div>
+        <!--banner section-->
+        <div class="max-w-screen-lg mx-auto px-[10px] lg:px-0 mt-[90px]">
+
+            <div class="ali text-center">
+                <h1 class="text-5xl font-semibold">Freshness <span class="text-btn-primary"> You Can <br>
                         Count </span> On, Prices You’ll Love!</h1>
-                    <p class="py-6 text-primary-txt font-regular text-xl">
-                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
-                    </p>
-                     
-                </div >
-                    
-                
-                <div class="mt-[30px]">
-                    <img src="images/hero-vegetables.png" alt="">
+                <p class="py-6 text-primary-txt font-regular text-xl">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve
+                    got you covered every day!
+                </p>
+
+            </div>
+
+
+            <div class="mt-[30px]">
+                <img src="images/hero-vegetables.png" alt="">
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <!--services section-->
+        <div class="mt-[140px] max-w-screen-lg mx-auto px-[10px] lg:px-0">
+            <h2 class="text-btn-primary text-3xl font-semibold mb-[48px]">Services</h2>
+            <div class="grid lg:grid-cols-3 gap-4">
+                <!--card 1-->
+                <div class="card bg-card-bg ">
+                    <figure class="px-10 pt-10">
+                        <div class="rounded-full bg-white p-6">
+                            <img src="images/service.png" alt="Shoes" />
+                        </div>
+
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">24/7 Services </h2>
+                        <p class="font-light text-primary-txt text-xl">Our 24-hour service ensures that you have support
+                            whenever you need it. Whether it's day or night</p>
+
+                    </div>
+                </div>
+                <!--card 2-->
+                <div class="card bg-card-bg ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/delivery.png" alt="Shoes" class="rounded-full bg-white p-5" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Fast Delivery</h2>
+                        <p class="font-light text-primary-txt text-xl">Experience fast delivery with our efficient
+                            service, ensuring your orders arrive quickly and on time, every time.</p>
+
+                    </div>
+                </div>
+                <!--card 3-->
+                <div class="card bg-card-bg ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/healthy.png" alt="Shoes" class="rounded-full bg-white p-5" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Healthy Products </h2>
+                        <p class="font-light text-primary-txt text-xl">Our healthy products are made with natural
+                            ingredients, promoting wellness and nourishing your body daily.</p>
+
+                    </div>
                 </div>
             </div>
-            
-        </header >
-        <main>
-            <div class="mt-[140px] max-w-screen-lg mx-auto px-[10px] lg:px-0">
-                <h2 class="text-btn-primary text-3xl font-semibold mb-[48px]">Services</h2>
-                <div class="grid lg:grid-cols-3 gap-4">
-                     <!--card 1-->
-                    <div class="card bg-card-bg ">
-                        <figure class="px-10 pt-10">
-                            <div class="rounded-full bg-white p-6">
-                                <img
-                                src="images/service.png"
-                                alt="Shoes"
-                                />
-                            </div>
-                          
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">24/7 Services </h2>
-                          <p class="font-light text-primary-txt text-xl">Our 24-hour service ensures that you have support whenever you need it. Whether it's day or night</p>
-                          
+
+        </div>
+
+        <!--populas product section-->
+        <section class=" bg-card-bg lg:pt-[140px] lg:pb-[140px] pt-[80px] pb-[80px] lg:mt-[140px] mt-[80px] ">
+            <h2 class="text-btn-primary font-semibold  mb-[40px]  text-2xl max-w-screen-lg mx-auto px-[10px] lg:px-0">
+                Popular Products</h2>
+            <div class="lg:grid grid-cols-3 gap-2 max-w-screen-lg mx-auto px-[10px] lg:px-0">
+                <div class="card bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] pt-[30px] pl-[30px] ">
+
+                    <div class=" ">
+                        <h2 class="card-title text-btn-text font-regular text-2xl mb-[10px]">30% off</h2>
+                        <p class="mb-[10px] font-regular text-xl text-primary-txt ">Discover a world of treats, toys,
+                            and essentials handpicked for</p>
+
+
+                    </div>
+
+                    <div class="grid grid-cols-3">
+                        <button class="btn bg-btn-text hover:text-btn-text hover:bg-btn-primary ">Buy Now</button>
+                        <img class="grid col-span-2" src="images/vegetable-offer.png" alt="">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 col-span-2 mt-[30px] lg:mt-0">
+                    <!--card 1-->
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
+                        <div class="rounded-[10px] bg-card-bg">
+                            <img src="images/image 43.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base text-primary-txt">onion 1KG</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
                         </div>
                     </div>
                     <!--card 2-->
-                    <div class="card bg-card-bg ">
-                        <figure class="px-10 pt-10">
-                          <img
-                            src="images/delivery.png"
-                            alt="Shoes"
-                            class="rounded-full bg-white p-5" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">Fast Delivery</h2>
-                          <p class="font-light text-primary-txt text-xl">Experience fast delivery with our efficient service, ensuring your orders arrive quickly and on time, every time.</p>
-                          
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
+                        <div class="rounded-[10px] bg-card-bg">
+                            <img src="images/image 41.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base  text-primary-txt">Tomato 500g</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
                         </div>
                     </div>
-                     <!--card 3-->
-                    <div class="card bg-card-bg ">
-                        <figure class="px-10 pt-10">
-                          <img 
-                            src="images/healthy.png"
-                            alt="Shoes"
-                            class="rounded-full bg-white p-5" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">Healthy Products  </h2>
-                          <p class="font-light text-primary-txt text-xl">Our healthy products are made with natural ingredients, promoting wellness and nourishing your body daily.</p>
-                          
+                    <!--card 3-->
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
+                        <div class="rounded-[10px] bg-card-bg">
+                            <img src="images/image 44.png" alt="">
                         </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base text-primary-txt">Potato 1KG</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
+                        </div>
+                    </div>
+                    <!--card 4-->
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
+                        <div class="rounded-[10px] bg-card-bg">
+                            <img src="images/image 41.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base text-primary-txt">Tomato 500g</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
+                        </div>
+                    </div>
+                    <!--card 5-->
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
+                        <div class="rounded-[10px] bg-card-bg">
+                            <img src="images/image 43.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base text-primary-txt">onion 1KG</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
+                        </div>
+                    </div>
+                    <!--card 6-->
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
+                        <div class="rounded-[10px] bg-card-bg">
+                            <img src="images/image 41.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base text-primary-txt">Tamato 500g</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
+                        </div>
+                    </div>
+                    <!--card 7-->
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
+                        <div class="rounded-[10px] bg-card-bg">
+                            <img src="images/image 43.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base text-primary-txt">onion 1KG</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
+                        </div>
+                    </div>
+                    <!--card 8-->
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
+                        <div class="rounded-[10px] bg-card-bg">
+                            <img src="images/image 44.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base text-primary-txt">Potato 1KG</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
+                        </div>
+                    </div>
+                    <!--card 9-->
+                    <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px] hidden lg:flex">
+                        <div class="rounded-[10px] bg-card-bg ">
+                            <img src="images/image 44.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h4 class="font-medium text-base text-primary-txt">Potato 1KG</h4>
+                            <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--arrival section-->
+
+        <section class="lg:pt-[140px] pt-[80px] lg:pb-[140px] max-w-screen-lg mx-auto px-[10px] lg:px-0">
+            <h2 class="font-semibold text-2xl text-btn-primary mb-[40px]">Arrival & offers</h2>
+            <div class="grid lg:flex lg:justify-between ">
+                <!--card1-->
+                <div class="flex bg-[#115414] rounded-[20px] p-[20px] items-center justify-between mb-[20px] lg:mb-0 lg:w-[600px]"> 
+                    <div class="">
+                        <img class="mb-[30px]" src="images/dawat-logo.png" alt="">
+                        <h4 class="bg-[#63B76D] rounded-[10px] p-[10px] font-regular text-base text-btn-text mb-[30px]">Cook Exotic Dishes</h4>
+                        <p class="font-regular text-2xl text-btn-text">UP to <span class="font-bold">20% OFF</span> </p>
+                    </div>
+                    <div>
+                        <img src="images/dawat-mock-up.png" alt="">
                     </div>
                 </div>
+                <!--card 2-->
+                
+                    <div class="flex bg-[#102861] rounded-[20px] p-[20px] items-center justify-between lg:w-[410px] "> 
+                        <div class="">
+                            <img class="mb-[30px]" src="images/india-gate-logo.png" alt="">
+                            <h4 class="bg-[#2A4D97] rounded-[10px] p-[10px] font-regular text-lg lg:text-base text-btn-text mb-[30px]">Cook Exotic Dishes</h4>
+                            <p class="font-regular text-2xl text-btn-text">UP to <span class="font-bold">20% OFF</span> </p>
+                        </div>
+                        <div>
+                            <img src="images/india-gate-mock-up.png" alt="">
+                        </div>
+                    </div>
                 
             </div>
+        </section>
 
-            <!--populas product section-->
-            <section class=" bg-card-bg lg:pt-[140px] lg:pb-[140px] pt-[80px] pb-[80px] lg:mt-[140px] mt-[80px] ">
-                <h2 class="text-btn-primary font-semibold  mb-[40px]  text-2xl max-w-screen-lg mx-auto px-[10px] lg:px-0">Popular Products</h2>
-                <div class="lg:grid grid-cols-3 gap-2 max-w-screen-lg mx-auto px-[10px] lg:px-0">
-                    <div class="card bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] pt-[30px] pl-[30px] ">
-                        
-                        <div class=" ">
-                        <h2 class="card-title text-btn-text font-regular text-2xl mb-[10px]">30% off</h2>
-                        <p class="mb-[10px] font-regular text-xl text-primary-txt ">Discover a world of treats, toys, and essentials handpicked for</p>
-                        
-                            
-                        </div>
-                        
-                        <div class="grid grid-cols-3">
-                            <button class="btn bg-btn-text hover:text-btn-text hover:bg-btn-primary ">Buy Now</button>
-                            <img class="grid col-span-2" src="images/vegetable-offer.png" alt="">
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 col-span-2">
-                        <!--card 1-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
-                            <div class="rounded-[10px] bg-card-bg">
-                                <img src="images/image 43.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base text-primary-txt">onion 1KG</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
-                        <!--card 2-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
-                            <div class="rounded-[10px] bg-card-bg">
-                                <img src="images/image 41.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base  text-primary-txt">Tomato 500g</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
-                        <!--card 3-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
-                            <div class="rounded-[10px] bg-card-bg">
-                                <img src="images/image 44.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base text-primary-txt">Potato 1KG</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
-                        <!--card 4-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
-                            <div class="rounded-[10px] bg-card-bg">
-                                <img src="images/image 41.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base text-primary-txt">Tomato 500g</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
-                        <!--card 5-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
-                            <div class="rounded-[10px] bg-card-bg">
-                                <img src="images/image 43.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base text-primary-txt">onion 1KG</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
-                        <!--card 6-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
-                            <div class="rounded-[10px] bg-card-bg">
-                                <img src="images/image 41.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base text-primary-txt">Tamato 500g</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
-                        <!--card 7-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
-                            <div class="rounded-[10px] bg-card-bg">
-                                <img src="images/image 43.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base text-primary-txt">onion 1KG</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
-                        <!--card 8-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px]">
-                            <div class="rounded-[10px] bg-card-bg">
-                                <img src="images/image 44.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base text-primary-txt">Potato 1KG</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
-                        <!--card 9-->
-                        <div class="flex gap-2 bg-btn-text rounded-[10px] p-[10px] pb-[16px] pt-[16px] hidden lg:flex">
-                            <div class="rounded-[10px] bg-card-bg ">
-                                <img src="images/image 44.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-regular text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
-                                <h4 class="font-medium text-base text-primary-txt">Potato 1KG</h4>
-                                <p class="font-medium text-sm text-primary-txt"><i class="fa-solid fa-dollar-sign"></i>39.99</p>
-                            </div>
-                        </div>
+    </main>
 
-                    </div>
-                </div>
-            </section>
-            
-        </main>
-        
 
-        
-    </body>
+
+</body>
+
 </html>
