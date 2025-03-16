@@ -47,11 +47,14 @@
             font-optical-sizing: auto;
             font-style: normal;
         }
+        html{
+            scroll-behavior: smooth;
+        }
     </style>
 
 </head>
 
-<body class="sora-font ">
+<body class="sora-font">
     <header class="bg-gradient-to-t from-header-bgb to-header-bgt">
         <nav class="max-w-screen-lg mx-auto px-[10px] lg:px-0 ">
             <div class="navbar">
@@ -62,9 +65,9 @@
 
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a class="font-regular text-xl" href="#">Product</a></li>
-                        <li><a class="font-regular text-xl" href="#">Services</a></li>
-                        <li><a class="font-regular text-xl" href="#">Contact us</a></li>
+                        <li><a class="font-regular text-xl" href="#product">Product</a></li>
+                        <li><a class="font-regular text-xl" href="#service">Services</a></li>
+                        <li><a class="font-regular text-xl" href="#contact">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end  ">
@@ -97,14 +100,14 @@
 
 
             <div class="mt-[30px]">
-                <img class="animate-bounce" src="images/hero-vegetables.png" alt="">
+                <img src="images/hero-vegetables.png" alt="">
             </div>
         </div>
 
     </header>
     <main class="">
         <!--services section-->
-        <div class="mt-[140px] max-w-screen-lg mx-auto px-[10px] lg:px-0">
+        <div class="mt-[140px] max-w-screen-lg mx-auto px-[10px] lg:px-0" id="service">
             <h2 class="text-btn-primary text-3xl font-semibold mb-[48px]">Services</h2>
             <div class="grid lg:grid-cols-3 gap-4">
                 <!--card 1-->
@@ -151,7 +154,7 @@
         </div>
 
         <!--populas product section-->
-        <section class=" bg-card-bg lg:pt-[140px] lg:pb-[140px] pt-[80px] pb-[80px] lg:mt-[140px] mt-[80px] ">
+        <section class=" bg-card-bg lg:pt-[140px] lg:pb-[140px] pt-[80px] pb-[80px] lg:mt-[140px] mt-[80px] " id="product">
             <h2 class="text-btn-primary font-semibold  mb-[40px]  text-2xl max-w-screen-lg mx-auto px-[10px] lg:px-0">
                 Popular Products</h2>
             <div class="lg:grid grid-cols-3 gap-2 max-w-screen-lg mx-auto px-[10px] lg:px-0">
@@ -384,7 +387,7 @@
         <section class="relative max-w-screen-lg mx-auto px-[10px] lg:px-0 ">
             <!--grocery news-->
     
-            <section class="max-w-screen-lg mx-auto px-[10px] lg:px-0 bg-card-bg rounded-[20px] absolute lg:bottom-[350px] bottom-[500px] right-[20px] left-[20px] z-2">
+            <section class="max-w-screen-lg mx-auto px-[10px] lg:px-0 bg-card-bg rounded-[20px] absolute lg:bottom-[350px] bottom-[500px] right-[20px] left-[20px] z-2" id="contact">
                 <div class="lg:flex items-center text-center lg:text-left p-[50px]">
                     <div class="">
                         <img src="images/vegetable-busket.png" alt="">
@@ -437,3 +440,4 @@
 </body>
 
 </html>
+
